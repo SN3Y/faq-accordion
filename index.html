@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./tailwind.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | FAQ accordion</title>
+
+</head>
+<body class="font-workSans bg-pink grid justify-center items-center">
+  <Picture>
+    <img 
+    class="absolute left-0 top-0 w-screen"
+      src="assets/images/background-pattern-mobile.svg" alt="background"
+      srcset="assets/images/background-pattern-desktop.svg 375w, assets/images/background-pattern-mobile.svg 991w"
+      sizes="(min-width:800px) 375px, 991px"
+     >
+  </Picture>
+  <div class="grid w-[90vw] md:w-[40vw] md:h-[70vh] h-[auto] mt-[100px] shadow-2xl z-10 md:mt-28 rounded-xl bg-white p-8">
+    <div class="container w-full h-fit">
+      <div class="flex gap-3 mb-6">
+        <img src="./assets/images/icon-star.svg" alt="icon-star">
+        <h1 class="font-bold text-4xl">FAQ's</h1>
+      </div>
+        <div class="m-2 space-y-2">
+          <div class="group flex flex-col bg-white p-0" tabindex="1">
+            <div class="flex cursor-pointer items-center w-100 justify-between text-start">
+              <span class="w-2/3 font-bold">What is Frontend Mentor, and how will it help me?</span>
+              <button class="w-8 h-8 bg-plus bg-center bg-no-repeat group-focus:bg-minus"></button>
+            </div>
+            <div class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+              <p class="text-gray-purple text-start">Frontend Mentor offers realistic coding challenges to help developers improve their 
+                frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+                all levels and ideal for portfolio building.</p>
+            </div>
+          </div>
+          <div class="group flex flex-col bg-white p-0" tabindex="2">
+            <div class="flex cursor-pointer items-center w-100 justify-between text-start">
+              <span class="w-2/3 font-bold">Is Frontend Mentor free?</span>
+              <button class="group w-8 h-8 bg-plus bg-center bg-no-repeat group-focus:bg-minus"></button>
+            </div>
+            <div class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+              <p class="text-gray-purple text-start">Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+                option providing access to a range of projects suitable for all skill levels.</p>
+            </div>
+          </div>
+          <div class="group flex flex-col bg-white p-0" tabindex="3">
+            <div class="flex cursor-pointer items-center w-100 justify-between text-start">
+              <span class="w-2/3 font-bold">Can I use Frontend Mentor projects in my portfolio?</span>
+              <button class="w-8 h-8 bg-plus bg-center bg-no-repeat group-focus:bg-minus"></button>
+            </div>
+            <div class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+              <p class="text-gray-purple text-start">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+                way to showcase your skills to potential employers!</p>
+            </div>
+          </div>
+          <div class="group flex flex-col bg-white h-auto overflow-hidden"  tabindex="4">
+            <div class="flex cursor-pointer items-center w-100 justify-between text-start">
+              <span class="w-2/3 font-bold">How can I get help if I'm stuck on a Frontend Mentor challenge?</span>
+              <button class="w-8 h-8 bg-plus bg-center bg-no-repeat group-focus:bg-minus"></button>
+            </div>
+            <div class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen 
+            group-focus:opacity-100 group-focus:duration-1000 group-focus:mb-auto">
+              <p class="text-gray-purple text-start pb-0 h-fit">The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+                channel where you can ask questions and seek support from other community members.</p>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
